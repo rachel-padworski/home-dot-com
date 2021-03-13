@@ -22,7 +22,7 @@ class Navbar extends React.Component {
                 <Link to='/cart' className="ml-auto">
                     <ButtonContainer>
                         <span className="mr-2">
-                            <img src={ cart } alt="cart" className="fas fa-cart-plus" />
+                            <i className="fas fa-cart-plus" />
                         </span>
                         My Cart
                     </ButtonContainer>

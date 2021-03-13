@@ -23,7 +23,7 @@ export default class Details extends Component {
                             {/* title */}
                             <div className="row">
                                 <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
-                                    <h1>{title}</h1>
+                                    <h1>{console.log(title)}</h1>
                                 </div>
                             </div>
                              {/* end title */}
@@ -59,6 +59,14 @@ export default class Details extends Component {
                                             back to products
                                         </ButtonContainer>
                                     </Link>
+                                    <ButtonContainer 
+                                    disabled={inCart ? true : false}
+                                    onClick={()=>{
+                                        value.addToCart(id)
+                                    }}
+                                    >
+                                        {inCart ? 'inCart' : 'add to cart'}
+                                    </ButtonContainer>
                                  </div>
                              </div>
                              {/* end product info */}
